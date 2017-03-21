@@ -23,7 +23,8 @@ public class BooleanPrefModel extends ToggleButtonModel implements PrefModel<Boo
 	
 	@Override
 	public Boolean get() {
-		assert pref.get(key, null) != null && pref.getBoolean(key, false) == super.isSelected();
+		assert pref.get(key, null) != null;
+		//pref.getBoolean(key, false) == super.isSelected();
 		return super.isSelected();
 	}
 	
