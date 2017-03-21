@@ -63,6 +63,8 @@ public class LocalVersionComponent extends VersionComponent {
 		if (oldWidth != getWidth()) {
 			fontMetrics = g2d.getFontMetrics();
 			String name = profile.getProfileName();
+			if (name == null)
+				name = "Unknown Version";
 			if (fontMetrics.stringWidth(name) > versionNameX - 25) {
 				int widthSum = 0;
 				for (int i = 0; i < name.length(); i++) {
