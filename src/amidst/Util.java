@@ -18,7 +18,7 @@ public class Util {
 	/** Shows an error message for an exception
 	 * @param e the exception for which the stachtrace is to be shown
 	 */
-	public static final String REMOTE_VERSION_LIST_URL = "https://s3.amazonaws.com/Minecraft.Download/versions/versions.json";
+	public static final String REMOTE_VERSION_LIST_URL = "https://launchermeta.mojang.com/mc/game/version_manifest.json";
 	private static String osString;
 	
 	public static String getOs() {
